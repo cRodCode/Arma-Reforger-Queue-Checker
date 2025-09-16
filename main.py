@@ -170,7 +170,7 @@ class App(customtkinter.CTk):
         # save the screenshot
         screenshot.save("assets/game.png")
 
-    def checkscreenshot(self, threshold=0.8):
+    def checkscreenshot(self, threshold=0.9):
         if self.check_at_0:
             img = cv.imread("assets/game.png", cv.IMREAD_GRAYSCALE)
             assert img is not None, "file could not be read, check your path!"
